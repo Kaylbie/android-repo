@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="latitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/inputLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="longitude"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/addByCoordinatesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pridėti su koordinatėmis" />
+
+    <EditText
+        android:id="@+id/inputAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adreso įvedimas"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/addByAddressButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pridėti su adresu" />
+    <Button
+        android:id="@+id/fetchLocationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gauti vietas" />
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

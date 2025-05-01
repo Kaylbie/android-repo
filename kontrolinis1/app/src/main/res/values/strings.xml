@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">kontrolinis1</string>
+    <string-array name="products">
+        <item>pc1</item>
+        <item>pc2</item>
+        <item>pc3</item>
+        <item>pc4</item>
+        <item>pc5</item>
+        <item>pc6</item>
+        <item>pc7</item>
+    </string-array>
+
+</resources>

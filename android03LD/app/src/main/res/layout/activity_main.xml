@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3D4A4"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:background="#A3D4A4"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:hint="@string/enterName"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="#FFFFFF"
+
+            tools:ignore="Autofill" />
+    </TableRow>
+
+    <TableRow
+        android:background="#A3D4A4"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/faculty"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/departmentAutoComplete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_weight="0"
+            android:hint="@string/selectFaculty" />
+    </TableRow>
+
+    <TableRow
+        android:background="#A3D4A4"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/difficulty"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="4"
+                android:rating="1"
+                android:stepSize="1" />
+        </LinearLayout>
+    </TableRow>
+
+    <View
+        android:layout_height="10dp"
+        android:background="#09760B" />
+    <TableRow android:background="#A3D4A4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="#004400"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="@string/data"
+            android:textColor="#004400"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:background="#A3D4A4"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+
+
+            android:gravity="center"
+            android:timePickerMode="spinner" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:gravity="center" />
+    </TableRow>
+
+    <View
+        android:layout_height="10dp"
+        android:background="#09760B" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A3D4A4"
+        android:text="@string/selectCity"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_weight="0"
+        android:background="#494848"
+        android:backgroundTint="#11AF16"
+        />
+
+
+    <TableRow
+        android:background="#9f9f9f"
+        >
+
+        <Switch
+            android:id="@+id/registerSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:text="@string/register"
+            android:textColor="#000000"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:backgroundTint="#3F51B5"
+            android:text="@string/save"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:cornerRadius="0dp"
+
+            />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="#A3D4A4">
+
+    </LinearLayout>
+
+
+</TableLayout>

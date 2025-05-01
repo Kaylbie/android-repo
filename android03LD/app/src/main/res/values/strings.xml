@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">03 LD - Grafines sasajos pagrindai</string>
+    <string-array name="departments">
+        <item>Mechanikos ir medžiagotyros laboratorija</item>
+        <item>Mechanikos skyrius</item>
+        <item>Mechanikos centras</item>
+        <item>Informatikos skyrius</item>
+        <item>Biochemijos centras</item>
+        <item>Fizikos katedra</item>
+        <item>Matematikos institutas</item>
+        <item>Elektrotechnikos fakultetas</item>
+    </string-array>
+    <string-array name="cities">
+        <item>Akmenė</item>
+        <item>Biržai</item>
+        <item>Kaunas</item>
+        <item>Vilnius</item>
+    </string-array>
+    <string name="save">SAUGOTI</string>
+    <string name="register">Registruoti</string>
+    <string name="selectCity">Pasirinkite miestą</string>
+    <string name="time">Laikas:</string>
+    <string name="data">Data:</string>
+    <string name="difficulty">Sudėtingumas:</string>
+    <string name="selectFaculty">Pasirinkite iš sąrašo padalinį</string>
+    <string name="faculty">Padalinys:</string>
+    <string name="enterName">Įveskite vardą ir pavardę</string>
+    <string name="name">Pavadinimas:</string>
+</resources>
